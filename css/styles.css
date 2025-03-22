@@ -1,0 +1,267 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  color: #434455;
+  background-color: #fff;
+  letter-spacing: 0.02em;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+h2 {
+  padding-bottom: 72px;
+}
+
+h3 {
+  font-weight: 500;
+  line-height: 1.2;
+  color: #2e2f42;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #404bbf;
+}
+
+button {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  font-size: 16px;
+  background: #4d5ae5;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 16px 32px;
+  margin: auto;
+  margin-top: 48px;
+  width: 169px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
+button:hover,
+button:focus {
+  background: #404bbf;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 0px;
+}
+
+.logo-studio-header {
+  color: #2e2f42;
+}
+
+.logo-studio-footer {
+  color: #f4f4fd;
+}
+
+.container {
+  max-width: 1158px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-left: 156px;
+  margin-right: 156px;
+}
+
+header .container {
+  display: flex;
+}
+
+.navigation {
+  font-weight: 500;
+  color: #2e2f42;
+  line-height: 1.5;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-item {
+  line-height: 1.5;
+}
+
+.address {
+  font-style: normal;
+  line-height: 1.5;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.address-list {
+  display: flex;
+  gap: 40px;
+  padding-left: 332px;
+}
+
+.address-item {
+  line-height: 1.5;
+}
+
+.main {
+  background: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+
+.main-header {
+  line-height: 1.07;
+  font-size: 56px;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.principles {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.principles-list {
+  display: flex;
+  flex-direction: row;
+  flex-basis: calc((100%-24px) / 4);
+  gap: 24px;
+}
+
+.principles-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.section-header {
+  font-weight: 700;
+  line-height: 1.11;
+  text-align: center;
+  color: #2e2f42;
+  font-size: 36px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.list-header {
+  letter-spacing: 0.02em;
+  padding-bottom: 8px;
+}
+
+.list-text {
+  line-height: 1.5;
+}
+
+.team {
+  text-align: center;
+  background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.team-list {
+  display: flex;
+  flex-direction: row;
+  flex-basis: calc((100%-72px) / 4);
+  gap: 24px;
+}
+
+.team-item {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0 0 4px 4px;
+  padding: 0px 0px 32px 0px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.photo {
+  padding-bottom: 32px;
+}
+
+.portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 24px;
+}
+
+.portfolio-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: calc((100%-48px) / 3);
+}
+
+footer {
+  background: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer-text {
+  color: #f4f4fd;
+  line-height: 1.5;
+}
