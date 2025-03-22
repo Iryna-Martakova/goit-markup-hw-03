@@ -17,7 +17,7 @@ h3 {
 }
 
 h2 {
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 h3 {
@@ -26,6 +26,7 @@ h3 {
   color: #2e2f42;
   font-size: 20px;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 p {
@@ -59,14 +60,16 @@ button {
   color: #fff;
   font-size: 16px;
   background: #4d5ae5;
+  border: none;
   cursor: pointer;
   border-radius: 4px;
   padding: 16px 32px;
   margin: auto;
   margin-top: 48px;
-  width: 169px;
+  min-width: 169px;
+  height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  display: flex;
+  display: block;
   justify-content: center;
   flex-direction: row;
   gap: 10px;
@@ -90,6 +93,7 @@ button:focus {
   justify-content: flex-start;
   flex-direction: row;
   gap: 0px;
+  margin-right: 76px;
 }
 
 .logo-studio-header {
@@ -108,21 +112,26 @@ button:focus {
   margin-right: 156px;
 }
 
-header .container {
+.header-page {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-page .container {
   display: flex;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .navigation {
   font-weight: 500;
   color: #2e2f42;
   line-height: 1.5;
-  padding-top: 24px;
-  padding-bottom: 24px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
   flex-direction: row;
   gap: 40px;
+  padding: 24px 0;
 }
 
 .nav-list {
@@ -163,6 +172,11 @@ header .container {
   color: #fff;
   text-align: center;
   letter-spacing: 0.02em;
+  max-width: 496px;
+}
+
+.principles .section-header {
+  visibility: hidden;
 }
 
 .principles {
@@ -173,7 +187,7 @@ header .container {
 .principles-list {
   display: flex;
   flex-direction: row;
-  flex-basis: calc((100%-24px) / 4);
+  flex-basis: calc((100%-72px) / 4);
   gap: 24px;
 }
 
@@ -211,10 +225,14 @@ header .container {
   padding-bottom: 120px;
 }
 
+.team-list-header {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
 .team-list {
   display: flex;
   flex-direction: row;
-  flex-basis: calc((100%-72px) / 4);
   gap: 24px;
 }
 
@@ -224,10 +242,19 @@ header .container {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: calc((100%-72px) / 4);
   border-radius: 0 0 4px 4px;
   padding: 0px 0px 32px 0px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.team-list-text {
+  text-align: center;
+}
+
+.team-item-info {
+  padding: 32px 0;
 }
 
 .photo {
@@ -245,6 +272,7 @@ header .container {
   flex-direction: row;
   justify-content: flex-start;
   gap: 24px;
+  row-gap: 48px;
 }
 
 .portfolio-item {
@@ -255,10 +283,22 @@ header .container {
   width: calc((100%-48px) / 3);
 }
 
-footer {
+.portfolio-list-header {
+  margin-bottom: 8px;
+}
+
+.portfolio-item-info {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+.footer {
   background: #2e2f42;
   padding-top: 100px;
   padding-bottom: 100px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-text {
