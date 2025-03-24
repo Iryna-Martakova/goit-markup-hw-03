@@ -10,7 +10,7 @@ body {
   background-color: #fff;
   letter-spacing: 0.02em;
 }
-h1,
+
 h2,
 h3 {
   margin: 0;
@@ -170,12 +170,13 @@ section {
 }
 
 .main-header {
-  max-width: 496px;
   line-height: 1.07;
   font-size: 56px;
   color: #fff;
-  text-align: center;
   letter-spacing: 0.02em;
+  max-width: 496px;
+  text-align: center;
+  margin: auto;
 }
 
 .visually-hidden {
