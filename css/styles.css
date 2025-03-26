@@ -113,6 +113,7 @@ button:focus {
 
 .container {
   max-width: 1158px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -127,7 +128,6 @@ section {
 .header-page .container {
   display: flex;
   justify-content: space-between;
-  padding: 0 15px;
 }
 
 .navigation {
@@ -200,11 +200,6 @@ section {
 }
 
 .principles-item {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 8px;
   width: calc((100% - 72px) / 4);
 }
 
